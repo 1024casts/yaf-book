@@ -1,0 +1,769 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>18. 对象注册表 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../plugin/" />
+    
+    
+    <link rel="prev" href="../modules/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1. Yaf简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../install/">
+            
+                <a href="../install/">
+            
+                    
+                    2. 安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../install/macos.md">
+            
+                <span>
+            
+                    
+                    2.1 macOS下的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../install/linux.md">
+            
+                <span>
+            
+                    
+                    2.2 Linux下的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../install/windows.md">
+            
+                <span>
+            
+                    
+                    2.3 Windows下的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../config/">
+            
+                <a href="../config/">
+            
+                    
+                    3. 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../quick-start/">
+            
+                <a href="../quick-start/">
+            
+                    
+                    4. 快速开始一个Yaf项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../run-process/">
+            
+                <a href="../run-process/">
+            
+                    
+                    5. 运行流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../architecture/">
+            
+                <a href="../architecture/">
+            
+                    
+                    6. 目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../config/">
+            
+                <a href="../config/">
+            
+                    
+                    7. Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../config/">
+            
+                <a href="../config/">
+            
+                    
+                    8. 命名空间-Namespace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../loader/README.md">
+            
+                <span>
+            
+                    
+                    9. 自动加载器-Loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../bootstrap/">
+            
+                <a href="../bootstrap/">
+            
+                    
+                    10. Bootstrap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../route/">
+            
+                <a href="../route/">
+            
+                    
+                    11. 路由-route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../controller/">
+            
+                <a href="../controller/">
+            
+                    
+                    12. 控制器-Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../request/">
+            
+                <a href="../request/">
+            
+                    
+                    13. 请求-Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../response/">
+            
+                <a href="../response/">
+            
+                    
+                    14. 响应-Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../model/">
+            
+                <a href="../model/">
+            
+                    
+                    15. 模型-Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../view/">
+            
+                <a href="../view/">
+            
+                    
+                    16. 视图-View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../modules/">
+            
+                <a href="../modules/">
+            
+                    
+                    17. 多模块-Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.18" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    18. 对象注册表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../plugin/">
+            
+                <a href="../plugin/">
+            
+                    
+                    19. 插件-Plugin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../session/">
+            
+                <a href="../session/">
+            
+                    
+                    20. 会话-Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../exception/">
+            
+                <a href="../exception/">
+            
+                    
+                    21. 错误处理与异常捕获
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extension/">
+            
+                <a href="../extension/">
+            
+                    
+                    22. 扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../extension/log.html">
+            
+                <a href="../extension/log.html">
+            
+                    
+                    22.1 日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../extension/cache.html">
+            
+                <a href="../extension/cache.html">
+            
+                    
+                    22.2 缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../console/README.md">
+            
+                <span>
+            
+                    
+                    23. 工具链
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../console/README.md">
+            
+                <span>
+            
+                    
+                    23.1 命令行工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../console/README.md">
+            
+                <span>
+            
+                    
+                    23.2 Yaf框架代码生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="../console/yaf-library.md">
+            
+                <span>
+            
+                    
+                    23.3 Yaf类库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.4" data-path="../console/README.md">
+            
+                <span>
+            
+                    
+                    23.4 Yaf框架骨架代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../server/README.md">
+            
+                <span>
+            
+                    
+                    24. Server配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    25. 部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="../deploy/nginx.md">
+            
+                <span>
+            
+                    
+                    25.1 Nginx部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.2" data-path="../deploy/swoole.md">
+            
+                <span>
+            
+                    
+                    25.1 Swoole部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >18. 对象注册表</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5BF9;&#x8C61;&#x6CE8;&#x518C;&#x8868;">&#x5BF9;&#x8C61;&#x6CE8;&#x518C;&#x8868;</h1>
+<h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2>
+<p>Yaf_Registry, &#x5BF9;&#x8C61;&#x6CE8;&#x518C;&#x8868;(&#x6216;&#x79F0;&#x5BF9;&#x8C61;&#x4ED3;&#x5E93;)&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x5728;&#x6574;&#x4E2A;&#x5E94;&#x7528;&#x7A7A;&#x95F4;(application space)&#x5185;&#x5B58;&#x50A8;&#x5BF9;&#x8C61;&#x548C;&#x503C;&#x7684;&#x5BB9;&#x5668;. &#x901A;&#x8FC7;&#x628A;&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#x5728;&#x5176;&#x4E2D;,&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;.&#x8FD9;&#x79CD;&#x673A;&#x5236;&#x76F8;&#x5F53;&#x4E8E;&#x4E00;&#x79CD;&#x5168;&#x5C40;&#x5B58;&#x50A8;. &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Yaf_Registry&#x7C7B;&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x6765;&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x6CE8;&#x518C;&#x8868;. &#x53E6;&#x5916;,&#x7531;&#x4E8E;&#x8BE5;&#x7C7B;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;,&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6570;&#x7EC4;&#x5F62;&#x5F0F;&#x6765;&#x8BBF;&#x95EE;&#x5176;&#x4E2D;&#x7684;&#x7C7B;&#x65B9;&#x6CD5;.</p>
+<blockquote>
+<p>&#x5728;PHP5.3&#x4E4B;&#x540E;, &#x6253;&#x5F00;<code>yaf.use_namespace</code>&#x7684;&#x60C5;&#x51B5;&#x4E0B;, &#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>Yaf\Registry</code></p>
+</blockquote>
+<h2 id="&#x5185;&#x7F6E;&#x65B9;&#x6CD5;&#x7684;&#x4F7F;&#x7528;">&#x5185;&#x7F6E;&#x65B9;&#x6CD5;&#x7684;&#x4F7F;&#x7528;</h2>
+<p>&#x4E3B;&#x8981;&#x5305;&#x542B;4&#x4E2A;&#x65B9;&#x6CD5;</p>
+<pre><code>Yaf_Registry {
+    public static Yaf_Registry has ( string $name );
+    public static Yaf_Registry get ( string $name );
+    public static Yaf_Registry set ( string $name, mixed $value );
+    public static Yaf_Registry del ( string $name );
+}
+</code></pre><h3 id="set">set</h3>
+<p><code>public static Yaf_Registry Yaf_Registry::set( string  $name , mixed  $value );</code> </p>
+<p>&#x5F80;&#x5168;&#x5C40;&#x6CE8;&#x518C;&#x8868;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x9879;</p>
+<p>&#x793A;&#x4F8B;</p>
+<pre><code>&lt;?php
+    // Yaf_Application::app()-&gt;getConfig()&#xFF0C; &#x4ECE;conf/application&#x83B7;&#x53D6;&#x914D;&#x7F6E;
+    $config = Yaf_Application::app()-&gt;getConfig();
+
+    Yaf_Registry::set(&apos;config&apos;, $config);
+?&gt;
+</code></pre><h3 id="get">get</h3>
+<p><code>public static Yaf_Registry Yaf_Registry::get( string  $name );</code></p>
+<p>&#x83B7;&#x53D6;&#x6CE8;&#x518C;&#x8868;&#x4E2D;&#x5BC4;&#x5B58;&#x7684;&#x9879;, &#x6210;&#x529F;&#x8FD4;&#x56DE;&#x8981;&#x83B7;&#x53D6;&#x7684;&#x6CE8;&#x518C;&#x9879;&#x7684;&#x503C;, &#x5931;&#x8D25;&#x8FD4;&#x56DE;FALSE&#x3002;
+&#x5982;&#x679C;$name&#x6CA1;&#x6709;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x914D;&#x7F6E;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;<code>NULL</code></p>
+<p>&#x793A;&#x4F8B;</p>
+<pre><code>&lt;?php
+    $config = Yaf_Application::app()-&gt;getConfig();
+    Yaf_Registry::set(&apos;config&apos;, $config);
+
+    /* &#x4E4B;&#x540E;&#x53EF;&#x4EE5;&#x5728;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#x83B7;&#x53D6;&#x5230; */
+    var_dump(Yaf_Registry::get(&quot;config&quot;));
+?&gt;
+</code></pre><h3 id="has">has</h3>
+<p><code>public static Yaf_Registry Yaf_Registry::has( string  $name );</code></p>
+<p>&#x67E5;&#x8BE2;&#x67D0;&#x4E00;&#x9879;&#x76EE;&#x662F;&#x5426;&#x5B58;&#x5728;&#x4E8E;&#x6CE8;&#x518C;&#x8868;&#x4E2D;, &#x5B58;&#x5728;&#x8FD4;&#x56DE;TRUE, &#x4E0D;&#x5B58;&#x5728;&#x8FD4;&#x56DE;FALSE</p>
+<p>&#x793A;&#x4F8B;</p>
+<pre><code>&lt;?php
+     /** &#x5B58;&#x5165; */
+     Yaf_Registry::set(&apos;config&apos;, Yaf_Application::app()-&gt;getConfig());
+
+     var_dump(Yaf_Registry::has(&quot;config&quot;)); // true
+?&gt;
+</code></pre><h3 id="del">del</h3>
+<p><code>public static Yaf_Registry Yaf_Registry::del( string  $name );</code></p>
+<p>&#x5220;&#x9664;&#x5B58;&#x5728;&#x4E8E;&#x6CE8;&#x518C;&#x8868;&#x4E2D;&#x7684;&#x540D;&#x4E3A;$name&#x7684;&#x9879;, &#x6210;&#x529F;&#x8FD4;&#x56DE;TRUE, &#x5931;&#x8D25;&#x8FD4;&#x56DE;FALSE
+&#x5982;&#x679C;&#x88AB;&#x5220;&#x9664;&#x7684;&#x5BF9;&#x8C61;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;<code>true</code></p>
+<p>&#x793A;&#x4F8B;</p>
+<pre><code>&lt;?php
+    $config = Yaf_Application::app()-&gt;getConfig();
+    Yaf_Registry::set(&apos;config&apos;, $config);
+
+    var_dump(Yaf_Registry::del(&quot;config&quot;)); //true
+?&gt;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../modules/" class="navigation navigation-prev " aria-label="Previous page: 17. 多模块-Modules">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../plugin/" class="navigation navigation-next " aria-label="Next page: 19. 插件-Plugin">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"18. 对象注册表","level":"1.18","depth":1,"next":{"title":"19. 插件-Plugin","level":"1.19","depth":1,"path":"plugin/README.md","ref":"plugin/README.md","articles":[]},"previous":{"title":"17. 多模块-Modules","level":"1.17","depth":1,"path":"modules/README.md","ref":"modules/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"registry/README.md","mtime":"2018-03-14T06:05:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-21T15:38:03.975Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

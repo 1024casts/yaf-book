@@ -1,0 +1,780 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>17. 多模块-Modules · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../registry/" />
+    
+    
+    <link rel="prev" href="../view/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1. Yaf简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../install/">
+            
+                <a href="../install/">
+            
+                    
+                    2. 安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../install/macos.md">
+            
+                <span>
+            
+                    
+                    2.1 macOS下的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../install/linux.md">
+            
+                <span>
+            
+                    
+                    2.2 Linux下的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../install/windows.md">
+            
+                <span>
+            
+                    
+                    2.3 Windows下的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../config/">
+            
+                <a href="../config/">
+            
+                    
+                    3. 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../quick-start/">
+            
+                <a href="../quick-start/">
+            
+                    
+                    4. 快速开始一个Yaf项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../run-process/">
+            
+                <a href="../run-process/">
+            
+                    
+                    5. 运行流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../architecture/">
+            
+                <a href="../architecture/">
+            
+                    
+                    6. 目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../config/">
+            
+                <a href="../config/">
+            
+                    
+                    7. Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../config/">
+            
+                <a href="../config/">
+            
+                    
+                    8. 命名空间-Namespace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../loader/README.md">
+            
+                <span>
+            
+                    
+                    9. 自动加载器-Loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../bootstrap/">
+            
+                <a href="../bootstrap/">
+            
+                    
+                    10. Bootstrap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../route/">
+            
+                <a href="../route/">
+            
+                    
+                    11. 路由-route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../controller/">
+            
+                <a href="../controller/">
+            
+                    
+                    12. 控制器-Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../request/">
+            
+                <a href="../request/">
+            
+                    
+                    13. 请求-Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../response/">
+            
+                <a href="../response/">
+            
+                    
+                    14. 响应-Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../model/">
+            
+                <a href="../model/">
+            
+                    
+                    15. 模型-Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../view/">
+            
+                <a href="../view/">
+            
+                    
+                    16. 视图-View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    17. 多模块-Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../registry/">
+            
+                <a href="../registry/">
+            
+                    
+                    18. 对象注册表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../plugin/">
+            
+                <a href="../plugin/">
+            
+                    
+                    19. 插件-Plugin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../session/">
+            
+                <a href="../session/">
+            
+                    
+                    20. 会话-Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../exception/">
+            
+                <a href="../exception/">
+            
+                    
+                    21. 错误处理与异常捕获
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extension/">
+            
+                <a href="../extension/">
+            
+                    
+                    22. 扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../extension/log.html">
+            
+                <a href="../extension/log.html">
+            
+                    
+                    22.1 日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../extension/cache.html">
+            
+                <a href="../extension/cache.html">
+            
+                    
+                    22.2 缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../console/README.md">
+            
+                <span>
+            
+                    
+                    23. 工具链
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../console/README.md">
+            
+                <span>
+            
+                    
+                    23.1 命令行工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../console/README.md">
+            
+                <span>
+            
+                    
+                    23.2 Yaf框架代码生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="../console/yaf-library.md">
+            
+                <span>
+            
+                    
+                    23.3 Yaf类库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.4" data-path="../console/README.md">
+            
+                <span>
+            
+                    
+                    23.4 Yaf框架骨架代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../server/README.md">
+            
+                <span>
+            
+                    
+                    24. Server配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    25. 部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="../deploy/nginx.md">
+            
+                <span>
+            
+                    
+                    25.1 Nginx部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.2" data-path="../deploy/swoole.md">
+            
+                <span>
+            
+                    
+                    25.1 Swoole部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >17. 多模块-Modules</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6A21;&#x5757;modules">&#x6A21;&#x5757;(modules)</h1>
+<h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2>
+<p>Yaf&#x6846;&#x67B6;&#x662F;&#x652F;&#x6301;&#x591A;&#x6A21;&#x5757;&#x7684;&#x3002;&#x5982;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x5C0F;&#x9879;&#x76EE;&#xFF0C;&#x4EE3;&#x7801;&#x91CC;&#x65E2;&#x653E;web&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4E5F;&#x653E;api&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x653E;&#x540E;&#x53F0;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x90A3;&#x4F7F;&#x7528;&#x591A;&#x6A21;&#x5757;&#x662F;&#x6700;&#x597D;&#x4E0D;&#x8FC7;&#x4E86;&#x3002;</p>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x6309;&#x529F;&#x80FD;&#x6765;&#x5212;&#x5206;&#x6A21;&#x5757;&#xFF0C;&#x6BD4;&#x5982;&#x7528;&#x6237;&#x6A21;&#x5757;&#xFF0C;&#x65B0;&#x95FB;&#x6A21;&#x5757;&#xFF0C;&#x533A;&#x5757;&#x94FE;&#x6A21;&#x5757;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x591A;&#x6A21;&#x5757;&#x662F;&#x53EF;&#x4EE5;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x5F00;&#x542F;&#x548C;&#x5173;&#x95ED;&#x7684;&#x3002;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x4E5F;&#x548C;&#x63A7;&#x5236;&#x5668;&#x4E00;&#x6837;&#x3002;</p>
+<h2 id="&#x591A;&#x6A21;&#x5757;&#x7684;&#x76EE;&#x5F55;&#x7ED3;&#x6784;">&#x591A;&#x6A21;&#x5757;&#x7684;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h2>
+<p>&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x5982;</p>
+<pre><code>// application/modules
+
+&#x251C;&#x2500;&#x2500; modules
+&#x2502;   &#x251C;&#x2500;&#x2500; Admin
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; controllers
+&#x2502;   &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; Index.php
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; views
+&#x2502;   &#x251C;&#x2500;&#x2500; Api
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; controllers
+&#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; Index.php
+&#x2502;   &#x2514;&#x2500;&#x2500; Web
+&#x2502;       &#x251C;&#x2500;&#x2500; Bootstrap.php
+&#x2502;       &#x251C;&#x2500;&#x2500; controllers
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; Index.php
+&#x2502;       &#x2514;&#x2500;&#x2500; views
+</code></pre><h2 id="&#x591A;&#x6A21;&#x5757;&#x7684;&#x914D;&#x7F6E;">&#x591A;&#x6A21;&#x5757;&#x7684;&#x914D;&#x7F6E;</h2>
+<p>&#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x6DFB;&#x52A0;&#x53EF;&#x4EE5;&#x591A;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x6A21;&#x5757;&#x540D;&#x4E4B;&#x95F4;&#x901A;&#x8FC7;&#x9017;&#x53F7;&#x5206;&#x5272;&#x3002;
+&#x5176;&#x4E2D;<code>Index</code>&#x6A21;&#x5757;&#x662F;&#x6846;&#x67B6;&#x9ED8;&#x8BA4;&#x7684;&#x6A21;&#x5757;, &#x5BF9;&#x5E94;&#x7684;&#x76EE;&#x5F55;&#x4F4D;&#x7F6E;&#x662F;<code>application/controllers</code>&#x3002;</p>
+<pre><code>// conf/application.ini
+application.modules     = Index,Web,Admin,Api
+</code></pre><h2 id="&#x6A21;&#x5757;&#x7684;&#x5B9A;&#x4E49;">&#x6A21;&#x5757;&#x7684;&#x5B9A;&#x4E49;</h2>
+<ol>
+<li>&#x6A21;&#x5757;&#x7684;&#x5B58;&#x653E;&#x4F4D;&#x7F6E;</li>
+</ol>
+<p>&#x5728;<code>application/modules</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x5176;&#x4E2D;<code>modules</code>&#x76EE;&#x5F55;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x662F;&#x6CA1;&#x6709;&#x521B;&#x5EFA;&#x7684;&#xFF0C;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x65B0;&#x5EFA;&#x3002;</p>
+<ol>
+<li>&#x6A21;&#x5757;&#x540D;&#x7684;&#x547D;&#x540D;&#x89C4;&#x5219;</li>
+</ol>
+<p>&#x6A21;&#x5757;&#x540D;&#x8981;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;&#xFF0C;&#x6BD4;&#x5982;&#x65B0;&#x5EFA;admin&#x6A21;&#x5757;&#xFF0C;&#x5728;<code>application/modules</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x65B0;&#x5EFA;<code>Admin/controllers</code>&#x3002;</p>
+<p>&#x521B;&#x5EFA;&#x5B8C;&#x7684;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;&#x4E3A;&#xFF1A;<code>application/modules/Admin/controllers</code></p>
+<ol>
+<li>&#x6A21;&#x5757;&#x4E0B;&#x63A7;&#x5236;&#x5668;&#x7684;&#x521B;&#x5EFA;</li>
+</ol>
+<p>&#x4E0E;&#x5728;<code>application/controllers</code>&#x7684;&#x521B;&#x5EFA;&#x4E00;&#x6837;&#xFF0C; &#x5982;</p>
+<pre><code>// application/modules/Admin/controllers/Index.php
+&lt;?php
+
+class IndexController extends Yaf\Controller_Abstract
+{
+
+    public function indexAction()
+    {
+        Yaf\Dispatcher::getInstance()-&gt;disableView();
+
+        $data = [
+            &apos;title&apos; =&gt; &apos;test title&apos;,
+            &apos;content&apos; =&gt; &apos;test content&apos;
+        ];
+
+        // &#x6A21;&#x677F;&#x8DEF;&#x5F84;&#xFF1A;application/views/index/index.phtml
+        $this-&gt;getView()-&gt;display(&apos;index/index.phtml&apos;, $data)
+    }
+}
+?&gt;
+</code></pre><h2 id="&#x591A;&#x6A21;&#x5757;&#x7684;&#x4F7F;&#x7528;">&#x591A;&#x6A21;&#x5757;&#x7684;&#x4F7F;&#x7528;</h2>
+<p>&#x591A;&#x6A21;&#x5757;&#x7684;&#x4F7F;&#x7528;&#x4E0E;&#x9ED8;&#x8BA4;&#x6A21;&#x5757;&#x7684;&#x4F7F;&#x7528;&#x4E0A;&#x591A;&#x4E86;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x540D;&#xFF0C;&#x533A;&#x522B;&#x5982;&#x4E0B;</p>
+<pre><code>// &#x9ED8;&#x8BA4;&#x6A21;&#x5757;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF7;&#x6C42;applicatin/controllers&#x4E0B;&#x7684;&#x63A7;&#x5236;&#x5668;
+http://domain.com/index/index
+
+// &#x591A;&#x6A21;&#x5757;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x6BD4;&#x5982;&#x8BF7;&#x6C42;&#x540E;&#x53F0; index&#x63A7;&#x5236;&#x5668;&#x7684;index&#x65B9;&#x6CD5;
+http://domain.com/admin/index/index
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../view/" class="navigation navigation-prev " aria-label="Previous page: 16. 视图-View">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../registry/" class="navigation navigation-next " aria-label="Next page: 18. 对象注册表">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"17. 多模块-Modules","level":"1.17","depth":1,"next":{"title":"18. 对象注册表","level":"1.18","depth":1,"path":"registry/README.md","ref":"registry/README.md","articles":[]},"previous":{"title":"16. 视图-View","level":"1.16","depth":1,"path":"view/README.md","ref":"view/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"modules/README.md","mtime":"2018-03-15T01:26:51.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-21T15:38:03.975Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
